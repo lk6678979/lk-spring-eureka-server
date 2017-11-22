@@ -20,10 +20,10 @@
 ```
 
 ## 2.代码编写
-### A. JAVA代码，仅需要在springboot工程的启动application类上添加@EnableEurekaServer注解：
+### A. JAVA代码，仅需要在springboot工程的启动application类上添加`@EnableEurekaServer`注解：
 ```
 @SpringBootApplication
-`@EnableEurekaServer`
+@EnableEurekaServer
 public class EurekaServerApplication {
 
 	public static void main(String[] args) {
