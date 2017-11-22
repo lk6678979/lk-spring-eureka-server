@@ -1,0 +1,14 @@
+server:
+  port: 8806
+
+spring:
+  profiles: one
+
+eureka:
+  instance:
+    hostname: eureka.server.one
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://eureka.server.three:8808/eureka/,http://eureka.server.two:8807/eureka/
