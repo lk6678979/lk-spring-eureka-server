@@ -19,4 +19,16 @@
 </dependency>
 ```
 
-## 2.启动一个服务注册中心，需要在springboot工程的启动application类上添加@EnableEurekaServer注解：
+## 2.代码编写
+### A. JAVA代码，仅需要在springboot工程的启动application类上添加@EnableEurekaServer注解：
+```
+@SpringBootApplication
+`@EnableEurekaServer`
+public class EurekaServerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(EurekaServerApplication.class, args);
+	}
+}
+```
+
