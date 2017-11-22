@@ -1,11 +1,11 @@
 # spingcloud服务注册中心 
 
 ## 1. 使用spring boot initializer获取maven项目，http://start.spring.io/
-选择如下：
+###　Ａ．组建选择如下：
 
 ![](https://raw.githubusercontent.com/lk6678979/lk-spring-eureka-server/master/lk-eureka-server/readme/iochoose.png)  
 
-创建完后的工程的pom.xml文件依赖如下：
+###　Ｂ．创建完后的工程的pom.xml文件依赖如下：
 ```
 <dependency>
 	<groupId>org.springframework.cloud</groupId>
