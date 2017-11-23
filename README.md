@@ -60,6 +60,16 @@ eureka:
 	java -jar lk-eureka-server-0.0.1-SNAPSHOT.jar --spring.profiles.active=one  
 	java -jar lk-eureka-server-0.0.1-SNAPSHOT.jar --spring.profiles.active=two  
 	java -jar lk-eureka-server-0.0.1-SNAPSHOT.jar --spring.profiles.active=three
-
-
+#### 2.3.3 域名配置
+在计算机host目录下添加3个hostname：  
+127.0.0.1 eureka.server.one  
+127.0.0.1 eureka.server.two  
+127.0.0.1 eureka.server.three  
+## 2.可视化界面
+在浏览器依次打开:  
+http://eureka.server.one:8806/  
+http://eureka.server.two:8807/  
+http://eureka.server.three:8808/  
+界面效果如下：
+![](https://raw.githubusercontent.com/lk6678979/lk-spring-eureka-server/master/lk-eureka-server/readme/springcloudui.png)  
 	
