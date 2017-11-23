@@ -1,3 +1,4 @@
+#服务启动端口号
 server:
   port: 8806
 
@@ -6,9 +7,13 @@ spring:
 
 eureka:
   instance:
+    #设置当前实例的主机名称
     hostname: eureka.server.one
   client:
+    #是否启动服务注册
     registerWithEureka: false
+    #是否检索服务
     fetchRegistry: false
+    #指定服务注册中心地址，这里使用3个注册中心相互注册实现集群
     serviceUrl:
       defaultZone: http://eureka.server.three:8808/eureka/,http://eureka.server.two:8807/eureka/
